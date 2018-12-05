@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JQuery</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+                $("#plus").click(function(){
+                    var first = parseFloat($('#eka').val());
+                    var second = parseFloat($('#toka').val());
+                    $('#result').html(first+second);
+                });
+        }); 
+         $(document).ready(function() {
+                $("#minus").click(function(){
+                    var first = parseFloat($('#eka').val());
+                    var second = parseFloat($('#toka').val());
+                    $('#result').html(first-second);
+                });
+        }); 
+    </script>
+</head>
+<body>
+    <h1>Excercise 1 - JQuery</h1>
+    
+    <button type="button" class="btn btn-info" disabled id="test1">Result =<p id="result"></p></button>
+    <p></p>
+    <form>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" id="eka">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" id="toka">
+        </div>
+      </div>
+    </form>
+    <p></p>
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+      <label class="btn btn-secondary active">
+        <input type="radio" name="options" id="plus" autocomplete="off">+
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="minus" autocomplete="off">-
+      </label>
+    </div>
+</body>
+</html>

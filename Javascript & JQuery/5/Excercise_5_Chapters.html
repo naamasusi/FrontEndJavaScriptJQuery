@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JQuery</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+                $("#eka").click(function(){
+                    $("#one").toggle();
+                });
+                $("#toka").click(function(){
+                    $("#one").fadeOut();
+                    $("#two").fadeOut();
+                });
+        }); 
+    </script>
+    
+    <style>
+        body {
+            width: 650px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Excercise 5 - JQuery</h1>
+
+    <div id="one"><h4>Chapter 1</h4><p>Ayrton Sennan tunneli ja valtatie Rodovia Ayrton Senna da Silva viestivät kaikille matkalaisille sen ylpeyden, jota tämä jättimetropoli henkii suurimmasta urheilusankaristaan. MUTTA valtaosa brasilialaisista joutuukin elämään enää F1-muistojen varassa. Juuri parhaillaan F1-urheilu elää syvää kriisiä koko Etelä-Amerikassa. Brasilialla ei ole ensi kertaa sitten kauden 1969 enää omaa kuljettajaa autourheilun kuninkuusluokassa ja lajin maahan välittäneen Globo TV:n kiinnostus jatkaa kallista sopimusta on hiipumassa.</p></div>
+    
+    <div id="two"><h4>Chapter 2</h4><p id="two">Ayrton Sennan tunneli ja valtatie Rodovia Ayrton Senna da Silva viestivät kaikille matkalaisille sen ylpeyden, jota tämä jättimetropoli henkii suurimmasta urheilusankaristaan. MUTTA valtaosa brasilialaisista joutuukin elämään enää F1-muistojen varassa. Juuri parhaillaan F1-urheilu elää syvää kriisiä koko Etelä-Amerikassa. Brasilialla ei ole ensi kertaa sitten kauden 1969 enää omaa kuljettajaa autourheilun kuninkuusluokassa ja lajin maahan välittäneen Globo TV:n kiinnostus jatkaa kallista sopimusta on hiipumassa.</p></div>
+    
+    <button type="button" class="btn btn-dark" id="eka">Toggle Chapter 1</button>
+    <button type="button" class="btn btn-dark" id="toka">Fade out both</button>
+</body>
+</html>

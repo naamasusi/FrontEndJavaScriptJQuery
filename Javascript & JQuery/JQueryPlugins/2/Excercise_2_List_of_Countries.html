@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>validation</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    
+    <link href="vendor/select2/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="vendor/select2/dist/js/select2.min.js"></script>
+    
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    
+    <style>      
+        input[type='number'] {
+        -moz-appearance:textfield;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <h1>Registration</h1>
+
+<form id="validateForm">
+      <div class="form-row">
+        <div class="col">
+            <label for="Fname">First Name</label>
+          <input type="text" id="Fname" class="form-control" placeholder="First name" minlength="2" maxlength="40" required>
+        </div>
+        <div class="col">
+            <label for="Lname">Last Name</label>
+          <input type="text" id="Lname" class="form-control" placeholder="Last name" minlength="2" maxlength="40" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Street Address</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter street address"  minlength="5" maxlength="50" required>
+      </div>
+      <div class="form-row">
+        <div class="col">
+            <label for="post">Postal Code</label>
+          <input type="number" id="post" class="form-control" placeholder="Enter postal code" webkit="" required>
+        </div>
+        <div class="col">
+            <label for="country">Country</label>
+            <select class="form-control bfh-countries" data-country="FIN">
+              <option value="AL"> </option>  
+              <option value="AL">Finland</option>
+              <option value="AL">Sweden</option>
+              <option value="AL">Denmark</option>
+              <option value="AL">Norway</option>
+              <option value="AL">Germany</option>
+              <option value="AL">Estonia</option>
+              <option value="WY">Iceland</option>
+            </select>
+          <!--<input type="text" id="country" class="form-control" placeholder="Enter country" required>-->
+      </div>
+    </div>
+    <div class="form-row">
+        <div class="col">
+            <label for="company">Company</label>
+          <input type="text" id="company" class="form-control" placeholder="Enter company" required>
+        </div>
+        <div class="col">
+            <label for="email">Email Address</label>
+          <input type="email" id="email" class="form-control" placeholder="Enter email" required>
+        </div>
+      </div>
+    <p>Payment Method</p>
+          <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="master" value="MasterCard">
+        <label class="form-check-label" for="MasterCard">
+   MasterCard
+        </label>
+        </div>
+
+      <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Visa">
+        <label class="form-check-label" for="exampleRadios2">
+        Visa
+        </label>
+      </div>
+      <div class="form-check disabled">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="Billing">
+        <label class="form-check-label" for="exampleRadios3">
+        Billing
+        </label>
+      </div>
+    <br>
+    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+</form>
+    
+    <select class="form-control bfh-countries" data-country="FIN">
+      <option value="AL"> </option>  
+      <option value="AL">Finland</option>
+      <option value="AL">Sweden</option>
+      <option value="AL">Denmark</option>
+      <option value="AL">Norway</option>
+      <option value="AL">Germany</option>
+      <option value="AL">Estonia</option>
+      <option value="WY">Iceland</option>
+    </select>
+
+    <script>$("#validateForm").validate()</script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
